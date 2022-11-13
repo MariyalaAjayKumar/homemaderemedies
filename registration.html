@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./registration.css">
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    
+    <section class="register">
+        <h1>Registration Form</h1>
+        <form action="registration.php" method="post">
+            <label for="name">UserName:</label>
+            <input type="text" minlength="5" maxlength="20" id="name" name="name" placeholder="enter a name" required><br>
+            <label for="number"></label>
+            <select name="number" id="number">
+                <option value="indian">indian +91</option>
+                <option value="Australia">Australia +61</option>
+                <option value="Aruba">Aruba+297</option>
+                <option value="benin">benin +229</option>
+            </select>
+            <input type="number" id="number" name="number" placeholder="phone number" maxlength="10" required><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" maxlength="3" placeholder="Age" required><br>
+            <div class="gender">
+                <label for="">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">:Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">:Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">:Others</label><br>
+            </div>
+            <label for="newpassword">New Password:</label>
+            <input type="password" id="newpassword" name="newpassword" minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" required><br>
+            <label for="Conformpassword">Conform Password:</label>
+            <input type="password" id="conformpassword" name="conformpassword" minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" required><br>
+            <input type="Submit" class="button">       
+        </form>
+    </section>
+
+</body>
+</html>
